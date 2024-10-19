@@ -66,5 +66,5 @@ double simpson (finteg f, double a, double b, int n)
 
 double function (double x)
 {
-    return log(pow(x,10) + sqrt(x) + cbrt(x) + cos(x));
+    return log(pow(x,10) + sqrt(x) + cbrt(x) + sin(x));
 }
