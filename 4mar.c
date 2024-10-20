@@ -9,12 +9,12 @@ double simpson (finteg, double, double, int);
 double trapz_adapt (finteg, double, double, double);
 double function (double);
 
-int n = 1000;
+int n = 10000;
 
 int main() 
 {   
     clock_t start = clock();
-    double a = 3, b = 10.0, eps = 1e-4;
+    double a = 3, b = 10.0, eps = 1e-6;
     printf ("trapz: %lf\n",trapz (function,a,b,n));
     printf ("simpson: %lf\n",simpson (function,a,b,n));
     printf ("trapz_adapt: %lf\n",trapz_adapt(function,a,b,eps));
@@ -50,7 +50,7 @@ double simpson (finteg f, double a, double b, int n)
 
 double trapz_adapt (finteg f, double a, double b, double eps)
 {
-    int n = 1000, precision = 2;
+    int n = 10000, precision = 2;
     double  x_new, q0 = trapz (function,a,b,n), q1 = q0, h = (b-a) / n;
     do
     {
