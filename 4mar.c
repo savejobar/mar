@@ -70,5 +70,5 @@ double trapz_adapt (finteg f, double a, double b, double eps)
 
 double function (double x)
 {
-    return log(pow(x,10) + sqrt(x) + cbrt(x) + cos(x));
+    return log(pow(x,14) + sqrt(x) + cbrt(x) + cos(2*x));
 }
