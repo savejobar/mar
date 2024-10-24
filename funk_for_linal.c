@@ -257,7 +257,7 @@ void polation (double *x, double *y, int n, double *d2y, int sh)
     for (i = 0; i < sh*(n-1)+1; i++)
     {
         step = (x[i/sh+1] - x[i/sh]) / sh;
-        printf ("f(%.2lf) = %.5lf\n",point,spline[i]);
+        printf ("f(%2lf) = %5lf\n",point,spline[i]);
         point += step;
     }  
     free (spline);

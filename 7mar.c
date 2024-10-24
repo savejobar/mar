@@ -5,7 +5,7 @@ int main ()
 {
     double one, two;
     FILE *f;
-    int n = 0, kolvo_tochek = 10, sh = kolvo_tochek+1;
+    int n = 0, kolvo_tochek = 20, sh = kolvo_tochek+1;
     if ( (f = fopen ("x,f(x).dat","r")) == NULL )
     {
         printf ("Error");
